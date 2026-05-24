@@ -6,22 +6,25 @@
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
 }
+
 /* body */
 body {
     background: #0b1020;
     color: white;
 }
+
 /* logo text */
 .logo-text {
     color: #00e5ff;
     font-weight: 800;
 
 }
+
 /* NAVBAR */
 #navbar {
-    position: relative;
+    position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -29,7 +32,7 @@ body {
     padding: 18px 50px;
     background: transparent;
     z-index: 1000;
-    height:auto
+    height: auto
 }
 
 #navbar .logo {
@@ -55,16 +58,17 @@ body {
 .logo-img {
     height: 40px;
     width: auto;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 /* SECTIONS */
 .section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px;
+    scroll-margin-top: 120px;
 }
 
 /* HERO */
@@ -74,6 +78,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .hero {
     position: relative;
     flex-direction: column;
@@ -103,6 +108,7 @@ body {
     color: #7aa2ff;
     margin-bottom: 20px;
 }
+
 /* title */
 .title {
     font-size: 60px;
@@ -264,5 +270,204 @@ body {
 
     .principles-text {
         margin-top: 10px;
+    }
+}
+
+/* about section */
+
+#about {
+    min-height: 100vh;
+    padding: 100px 50px;
+    scroll-margin-top: 120px;
+}
+
+
+.about-section {
+    padding: 100px 10%;
+    background: #fff;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/* LEFT IMAGE */
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* RIGHT CONTENT */
+.about-content {
+    flex: 1;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 44px;
+    line-height: 1.2;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.about-content h2 span {
+    color: #7aa6b8;
+    /* matching modern blue tone */
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.points p {
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.points strong {
+    display: block;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+}
+
+/* INVESTMENTS SECTION */
+
+.investments-section {
+    padding: 110px 70px;
+    background: #f4f4f4;
+}
+
+.investments-header {
+    margin-bottom: 60px;
+}
+
+.investments-header h2 {
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #1b2d42;
+    margin-bottom: 20px;
+}
+
+.investments-header h2 span {
+    color: #7ec8e3;
+}
+
+.investments-subtitle {
+    max-width: 720px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.investments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.investment-card {
+    background: white;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.investment-card:hover {
+    transform: translateY(-10px);
+}
+
+.investment-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.investment-info {
+    padding: 30px;
+    border-left: 5px solid #0b5d91;
+}
+
+.investment-number {
+    display: block;
+    font-size: 55px;
+    font-weight: 300;
+    color: #7ec8e3;
+    margin-bottom: 10px;
+}
+
+.card-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #1b2d42;
+    margin-bottom: 10px;
+}
+
+.investment-info h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #1b2d42;
+    margin-bottom: 16px;
+}
+
+.investment-info p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.investment-info a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #00a8cc;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .investments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .investments-section {
+        padding: 80px 25px;
+    }
+
+    .investments-header h2 {
+        font-size: 42px;
     }
 }
