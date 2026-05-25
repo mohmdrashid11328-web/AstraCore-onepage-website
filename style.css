@@ -127,11 +127,21 @@ body {
 }
 
 /* HERO STATS */
+.stats {
+     text-align: left;
+}
+.hero {
+     position: relative;
+    min-height: 100vh;
+}
 .hero-stats {
     margin-top: 40px;
     display: flex;
-    gap: 40px;
+    gap: 25px;
     z-index: 2;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
 }
 
 .hero-stats div {
@@ -470,4 +480,89 @@ body {
     .investments-header h2 {
         font-size: 42px;
     }
+}
+
+/* VISION SECTION */
+.vision-section {
+    position: relative;
+    background: url('images/bridge.jpg') center/cover no-repeat;
+    padding: 120px 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.vision-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 20, 0.65);
+    backdrop-filter: blur(2px);
+}
+
+.vision-content {
+    position: relative;
+    max-width: 950px;
+    margin: auto;
+    z-index: 2;
+}
+
+.vision-title {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #00aaff;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.vision-text {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+.vision-brand {
+    margin-top: 25px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #44c6ff;
+}
+
+/* CARDS */
+.vision-cards {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.vision-card {
+    background: rgba(255, 255, 255, 0.10);
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+}
+
+.vision-card:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-6px);
+}
+
+.vision-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.vision-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.vision-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
 }
