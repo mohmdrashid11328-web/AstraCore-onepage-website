@@ -131,7 +131,7 @@ body {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 72px;
     line-height: 1.05;
     font-weight: 600;
 }
@@ -806,6 +806,7 @@ body {
     font-weight: 500;
 }
 
+
 /* paragraph */
 .contact-description {
     font-size: 17px;
@@ -836,22 +837,28 @@ body {
     max-width: 650px;
 }
 
+.contact-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
 .contact-buttons button {
-    padding: 10px 20px;
-    background: transparent;
-    border: 1px solid rgba(126, 200, 227, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
+    padding: 14px 30px;
+    background: white;
+    color:  green;
+    border: none;
+    border-radius: 6px;
     font-size: 12px;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-
 .contact-buttons button:hover {
-    background: #7ec8e3;
-    color: #0b1020;
+    background: white;
+    color: navy;
 }
-
 /* footer */
 .site-footer {
     background: #1A2B4C;
@@ -937,6 +944,8 @@ body {
     /* Light blue hover from earlier sections */
 }
 
+
+
 /* Tablet */
 @media (max-width: 1024px) {
     .footer-container {
@@ -973,58 +982,141 @@ body {
         margin-bottom: 15px;
     }
 }
-
-/* responsive */
+/* rsponsive */
 @media (max-width: 900px) {
 
+    /* NAVBAR */
     #navbar {
-        padding: 20px;
+        padding: 15px 20px;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     #navbar nav {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 0 25px;
     }
 
     .title {
-        font-size: 58px;
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 14px;
     }
 
     .hero-stats {
         position: relative;
         left: 0;
         bottom: 0;
-        margin-top: 50px;
+        margin-top: 40px;
         flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .principles-grid,
-    .investments-grid,
-    .vision-cards,
-    .advisory-right {
+    /* ABOUT */
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    /* PRINCIPLES */
+    .principles-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-container,
+    /* INVESTMENTS */
+    .investments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ADVISORY */
     .advisory-container {
         flex-direction: column;
     }
 
-    .contact-content h2,
+    .advisory-left,
+    .advisory-right {
+        width: 100%;
+    }
+
+    /* VISION */
+    .vision-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-card img {
+        height: 260px;
+    }
+
+    /* CONTACT */
+    .contact-row {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+
+    /* HEADINGS */
+    .contact-text h2,
     .advisory-left h2,
     .investments-header h2,
-    .principles-heading h2 {
-        font-size: 42px;
+    .principles-heading h2,
+    .about-content h2 {
+        font-size: 38px;
     }
 
     .vision-text {
-        font-size: 28px;
+        font-size: 24px;
     }
 
-    .footer {
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+ /* for very small phones */
+ @media (max-width: 480px) {
+
+    .title {
+        font-size: 36px;
+    }
+
+    .principles-heading h2,
+    .about-content h2,
+    .investments-header h2,
+    .advisory-left h2,
+    .contact-text h2 {
+        font-size: 30px;
+    }
+
+    .vision-text {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .hero-stats {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .gcc-grid {
+        grid-template-columns: 1fr;
     }
 }
