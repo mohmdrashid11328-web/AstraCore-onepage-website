@@ -867,30 +867,34 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
+    gap: 140px;
 }
 
 .footer-brand {
     flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .footer-logo {
     background: #fff;
-    display: inline-block;
-    padding: 12px 18px;
-    margin-bottom: 25px;
+    padding: 8px;
+    margin-bottom: 0;
 }
 
 .footer-logo img {
-    height: 32px;
+    height: 24px;
     width: auto;
     display: block;
 }
 
 .footer-desc {
-    font-size: 15px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 260px;
     margin: 0;
 }
 
@@ -902,7 +906,7 @@ body {
 }
 
 .footer-col h4 {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 1.5px;
     font-weight: 600;
     margin: 0 0 20px;
@@ -924,7 +928,7 @@ body {
 .footer-col ul li a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     transition: color 0.2s ease;
 }
 
