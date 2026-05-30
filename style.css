@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     font-family: sans-serif;
 }
+
 .small-title {
     font-size: 12px;
     letter-spacing: 3px;
@@ -98,7 +99,7 @@ body {
     align-items: flex-start;
     padding: 0 8%;
     background:
-        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+        linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)),
         url("images/back.jpeg");
 
     background-size: cover;
@@ -110,7 +111,7 @@ body {
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-content,
@@ -134,7 +135,7 @@ body {
     line-height: 1.05;
     font-weight: 600;
 }
-    
+
 
 .title span {
     color: #7ec8e3;
@@ -213,6 +214,7 @@ body {
     font-size: 15px;
     line-height: 1.7;
 }
+
 .principles-section .small-title {
     color: black;
 }
@@ -228,8 +230,8 @@ body {
 /* CARDS */
 
 .principle-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
     overflow: hidden;
 
@@ -238,7 +240,7 @@ body {
 
 .principle-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .principle-card img {
@@ -258,7 +260,8 @@ body {
 .principle-card p {
     font-size: 15px;
     line-height: 1.7;
-   color: #6ec1d4;;
+    color: #6ec1d4;
+    ;
     margin: 0 20px 25px;
     font-weight: lighter;
 }
@@ -310,13 +313,16 @@ body {
     gap: 60px;
     align-items: center;
 }
+
 .about-content h2,
 .points strong {
-    color:  rgb(16, 16, 16);
+    color: rgb(16, 16, 16);
     font-weight: lighter;
 }
+
 .points {
-    margin-top: 40px; /* increase/decrease this value */
+    margin-top: 40px;
+    /* increase/decrease this value */
 }
 
 .description,
@@ -341,13 +347,15 @@ body {
     flex: 1;
 }
 
-   .about-content h2 {
+.about-content h2 {
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2;
 }
+
 .about-content h2 span {
-    color: #6ec1d4;;
+    color: #6ec1d4;
+    ;
     /* matching modern blue tone */
 }
 
@@ -389,6 +397,7 @@ body {
     padding: 110px 70px;
     background: white;
 }
+
 .investments-section .small-title {
     color: #0b1020;
 }
@@ -422,15 +431,15 @@ body {
 }
 
 .investment-card {
-    background: rgba(255,255,255,0.04);
+    background: rgba(255, 255, 255, 0.04);
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
     overflow: hidden;
 
     transition: 0.4s ease;
 }
-    
+
 .investment-card:hover {
     transform: translateY(-10px);
 }
@@ -466,7 +475,8 @@ body {
 }
 
 .investment-info p {
-    color: rgb(16, 16, 16);;
+    color: rgb(16, 16, 16);
+    ;
     line-height: 1.8;
     font-size: 15px;
 }
@@ -523,7 +533,7 @@ body {
     border-radius: 24px;
 
     background:
-        linear-gradient(rgba(0,0,20,0.65), rgba(0,0,20,0.65)),
+        linear-gradient(rgba(0, 0, 20, 0.65), rgba(0, 0, 20, 0.65)),
         url('images/bridge.jpg') center/cover no-repeat;
 
     z-index: 2;
@@ -571,7 +581,8 @@ body {
     gap: 0;
     position: relative;
     z-index: 2;
-    padding: 0 8% 120px;  /* pushes cards lower inside section */
+    padding: 0 8% 120px;
+    /* pushes cards lower inside section */
 }
 
 .vision-card {
@@ -595,7 +606,7 @@ body {
     display: block;
 }
 
-.vision-card h3{
+.vision-card h3 {
     position: absolute;
     bottom: 45px;
     left: 25px;
@@ -604,24 +615,25 @@ body {
     font-weight: 300;
     color: white;
 }
-.vision-card span{
+
+.vision-card span {
     position: absolute;
     bottom: 25px;
     left: 25px;
     font-size: 12px;
     letter-spacing: 2px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* ADVISORY SECTION */
-.advisory-section{
+.advisory-section {
     background: #f4f4f4;
     padding: 110px 70px;
     color: #111;
 }
 
 
-.advisory-container{
+.advisory-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -629,7 +641,7 @@ body {
 }
 
 /* LEFT */
-.advisory-left{
+.advisory-left {
     width: 48%;
 }
 
@@ -637,7 +649,7 @@ body {
     color: #444;
 }
 
-.advisory-left h2{
+.advisory-left h2 {
     font-size: 58px;
     line-height: 1;
     font-weight: 300;
@@ -645,12 +657,12 @@ body {
     color: #1f2937;
 }
 
-.advisory-left h2 span{
+.advisory-left h2 span {
     color: #67cbe7;
     font-weight: 300;
 }
 
-.advisory-desc{
+.advisory-desc {
     font-size: 14px;
     line-height: 1.8;
     color: #444;
@@ -658,42 +670,43 @@ body {
     max-width: 560px;
 }
 
-.advisory-points{
+.advisory-points {
     border-left: 3px solid #67cbe7;
     padding-left: 22px;
 }
 
-.point{
+.point {
     padding: 18px 0;
     border-bottom: 1px solid #ddd;
 }
 
-.point h4{
+.point h4 {
     font-size: 13px;
     margin-bottom: 8px;
     color: #1f2937;
 }
 
-.point p{
+.point p {
     font-size: 13px;
     line-height: 1.6;
     color: #555;
 }
 
 /* RIGHT */
-.advisory-right{
+.advisory-right {
     width: 48%;
     background: white;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
-.advisory-right img{
+.advisory-right img {
     width: 100%;
     height: 320px;
     object-fit: cover;
     display: block;
 }
-.gcc-small-title{
+
+.gcc-small-title {
     font-size: 9px;
     letter-spacing: 2px;
     color: white;
@@ -701,8 +714,9 @@ body {
     text-transform: uppercase;
     background: #041b4d;
 }
+
 /* GCC BOX */
-.gcc-top{
+.gcc-top {
     background: #041b4d;
     color: white;
     padding: 22px 28px;
@@ -710,20 +724,20 @@ body {
     font-weight: 300;
 }
 
-.gcc-text{
+.gcc-text {
     padding: 35px 28px;
     font-size: 15px;
     line-height: 1.8;
     color: #555;
 }
 
-.gcc-grid{
+.gcc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid #ccc;
 }
 
-.gcc-grid div{
+.gcc-grid div {
     padding: 16px 22px;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -736,10 +750,11 @@ body {
     gap: 10px;
 }
 
-.gcc-grid div:nth-child(2n){
+.gcc-grid div:nth-child(2n) {
     border-right: none;
 }
-.gcc-grid div::before{
+
+.gcc-grid div::before {
     content: "";
     width: 6px;
     height: 6px;
@@ -770,26 +785,29 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-     backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 
     /* full dim like professional landing pages */
     background:
-      linear-gradient(rgba(0,0,20,0.65), rgba(0,0,20,0.65));
+        linear-gradient(rgba(0, 0, 20, 0.65), rgba(0, 0, 20, 0.65));
     z-index: 1;
 }
-.contact-text h2{
+
+.contact-text h2 {
     font-size: 42px;
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
     color: #ffffff;
 }
-.contact-text h2 span{
+
+.contact-text h2 span {
     color: #7ec8e3;
     font-weight: 500;
 }
+
 /* paragraph */
-.contact-description{
+.contact-description {
     font-size: 17px;
     color: white;
     margin-top: 10px;
@@ -813,15 +831,15 @@ body {
     box-sizing: border-box;
 }
 
-.contact-text{
+.contact-text {
     text-align: left;
     max-width: 650px;
 }
 
-.contact-buttons button{
+.contact-buttons button {
     padding: 10px 20px;
     background: transparent;
-    border: 1px solid rgba(126,200,227,0.5);
+    border: 1px solid rgba(126, 200, 227, 0.5);
     color: white;
     cursor: pointer;
     transition: 0.3s ease;
@@ -829,14 +847,15 @@ body {
     letter-spacing: 1px;
 }
 
-.contact-buttons button:hover{
+.contact-buttons button:hover {
     background: #7ec8e3;
     color: #0b1020;
 }
 
 /* footer */
 .site-footer {
-    background: #1A2B4C; /* Dark navy from screenshot */
+    background: #1A2B4C;
+    /* Dark navy from screenshot */
     color: #fff;
     padding: 80px 0 70px;
 }
@@ -910,7 +929,8 @@ body {
 }
 
 .footer-col ul li a:hover {
-    color: #4A9FD8; /* Light blue hover from earlier sections */
+    color: #4A9FD8;
+    /* Light blue hover from earlier sections */
 }
 
 /* Tablet */
@@ -919,11 +939,11 @@ body {
         flex-direction: column;
         gap: 50px;
     }
-    
+
     .footer-brand {
         flex: 1;
     }
-    
+
     .footer-links {
         width: 100%;
         gap: 40px;
@@ -935,16 +955,16 @@ body {
     .site-footer {
         padding: 60px 0 50px;
     }
-    
+
     .footer-container {
         padding: 0 6%;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-    
+
     .footer-col h4 {
         margin-bottom: 15px;
     }
