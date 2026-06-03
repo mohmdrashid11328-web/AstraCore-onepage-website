@@ -1007,7 +1007,25 @@ body {
         color:white;
         z-index: 10001;
     }
-}  
+
+    @media (max-width: 768px) {
+
+    #navbar nav {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(10,15,30,0.95);
+        width: 250px;
+        padding: 20px;
+        transition: 0.3s ease;
+    }
+
+    #navbar.active nav {
+        right: 0;
+    }
+}
+
 
     /* HERO */
     .hero {
@@ -1094,6 +1112,7 @@ body {
     .vision-text {
         font-size: 24px;
     }
+}
 
     /* FOOTER */
     .footer-container {
