@@ -1,16 +1,19 @@
 console.log("JavaScript connected!");
 
-// hamburger icon
+
+const navbar = document.getElementById("navbar");
 const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
+const closeBtn = document.querySelector(".close-btn");
+const overlay = document.querySelector(".overlay");
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    
+menuToggle.onclick = () => {
+    navbar.classList.add("active");
+};
 
-     if(nav.classList.contains("active")){
-        menuToggle.innerHTML = "✕";
-    }else{
-        menuToggle.innerHTML = "☰";
-    }
-});
+closeBtn.onclick = () => {
+    navbar.classList.remove("active");
+};
+
+overlay.onclick = () => {
+    navbar.classList.remove("active");
+};
