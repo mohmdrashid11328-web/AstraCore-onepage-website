@@ -1,25 +1,37 @@
 console.log("JavaScript connected!");
 
-// hamburger and close icon
 const navbar = document.getElementById("navbar");
-const menuToggle = document.querySelector(".menu-toggle");
+const menuBtn = document.querySelector(".menu-toggle");
 const closeBtn = document.querySelector(".close-btn");
-const overlay = document.querySelector(".overlay");
 
-if (menuToggle) {
-    menuToggle.onclick = () => {
-        navbar.classList.add("active");
-    };
-}
+menuBtn.addEventListener("click", () => {
+    navbar.classList.add("active");
+});
 
-if (closeBtn) {
-    closeBtn.onclick = () => {
-        navbar.classList.remove("active");
-    };
-}
+closeBtn.addEventListener("click", () => {
+    navbar.classList.remove("active");
+});
 
-if (overlay) {
-    overlay.onclick = () => {
-        navbar.classList.remove("active");
-    };
-}
+
+// intersection observer for principle cards
+window.addEventListener("load", () => {
+
+    document.getElementById("loader").style.display = "none";
+
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+
+    });
+
+});
+
+hiddenElements.forEach((el) => observer.observe(el));
